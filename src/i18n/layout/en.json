@@ -3,14 +3,12 @@
     "notFound": "404 Page Not Found",
     "header": {
       "quick": "Quick Start",
-      "why": "Why Milvus",
+      "why": "Why Arctern",
       "gui": "Admin",
-      "solution": "Scenarios",
-      "about": "About Milvus",
+      "about": "About Arctern",
       "doc": "Docs",
       "blog": "Blog",
       "tutorial": "Tutorial",
-      "benchmarks": "Benchmarks",
       "try": "Try",
       "loading": "Loading...",
       "noresult": "No Result"
@@ -18,8 +16,8 @@
     "footer": {
       "product": {
         "title": "Product",
-        "txt1": "Milvus",
-        "txt2": "Milvus Roadmap"
+        "txt1": "Arctern",
+        "txt2": "Arctern Roadmap"
       },
       "doc": {
         "title": "Docs",
@@ -29,14 +27,14 @@
       },
       "tool": {
         "title": "Tool",
-        "txt1": "Milvus Sizing Tool"
+        "txt1": "Arctern Sizing Tool"
       },
       "resource": {
         "title": "Resources",
         "txt1": "Github",
         "txt2": "Medium",
         "txt3": "CSDN",
-        "txt4": "Milvus Bootcamp"
+        "txt4": "Arctern Bootcamp"
       },
       "contact": {
         "title": "Connect",
@@ -45,80 +43,62 @@
     },
     "home": {
       "section1": {
-        "desc1": "An Open Source Vector Similarity Search Engine",
-        "desc2": "Milvus is easy-to-use, highly reliable, scalable, robust, and blazing fast.",
+        "desc1": "Arctern: an open source spatiotemporal data analysis platform",
+        "desc2": "Arctern is designed to accelerate the processing, analysis and visualization of spatiotemporal data. Based on most popular open source big data technology, we are building a flexible, powerful, high performance analysis platform for people to meet the spatio-temporal data challenge in 5G/IoT era.",
         "link": "Learn More",
         "link2": "Get Started",
         "community": "Community"
       },
       "section2": {
-        "title": "What is Milvus",
-        "content": "Milvus is an open source similarity search engine for massive-scale feature vectors. Built with heterogeneous computing architecture for the best cost efficiency. Searches over billion-scale vectors take only milliseconds with minimum computing resources. Milvus can be used in a wide variety of scenarios to boost AI development.",
+        "title": "What is Arctern",
+        "content": "Arctern is an open source similarity search engine for massive-scale feature vectors. Built with heterogeneous computing architecture for the best cost efficiency. Searches over billion-scale vectors take only milliseconds with minimum computing resources. Arctern can be used in a wide variety of scenarios to boost AI development.",
         "link": "Quick Start"
       },
       "section3": {
-        "title": "Milvus Features",
+        "title": "Arctern Features",
         "list": [
           {
-            "title": "Comprehensive Similarity Metrics",
-            "content": "Milvus offers frequently used similarity metrics, including Euclidean distance, inner product, Hamming distance, Jaccard distance, etc., allowing you to explore vector similarity in the most effective and efficient way possible.",
+            "title": "Powerful spatio-temporal functions",
+            "content": "Support key OGC standard APIs, location algorithm and spatio-temporal models.",
             "img": "metrics"
           },
           {
-            "title": "Leading-Edge Performance",
-            "content": "Milvus is built on top of multiple optimized Approximate Nearest Neighbor Search (ANNS) indexing libraries, including <a href='https://github.com/facebookresearch/faiss' target='_blank'>faiss</a>, <a href='https://github.com/spotify/annoy' target='_blank'>annoy</a>, <a href='https://github.com/nmslib/hnswlib' target='_blank'>hnswlib</a>, etc., thus ensuring that you always get the best performance across various scenarios.",
+            "title": "Viz Interaction",
+            "content": "SQL based interaction capability. Arctern provides fast and vivid results for spatio-temporal analysis with server rendering technology.",
             "img": "performence"
           },
           {
-            "title": "Dynamic Data Management",
-            "content": "No longer troubled by static data, you can operate data with insertion, deletion, search and update whenever needed.",
+            "title": "Any scale",
+            "content": "Arctern could be deployed on any scenarios from single laptop to cluster containing multiple servers. While the user experience remain the same.",
             "img": "crud"
           },
           {
-            "title": "Near Real Time Search",
-            "content": "Data is available for search almost immediately after being inserted and updated. Milvus does the heavy lifting in your best interests in terms of both result accuracy and data consistency.",
+            "title": "Modern Data Science Technology",
+            "content": "Arctern integrates technology like Python, Spark etc. Users don't need to change their existing data analysis method and process.",
             "img": "realtime"
           },
           {
-            "title": "Cost Efficient",
-            "content": "Milvus harnesses the parallelism of modern processors and enables billion-scale similarity searches in milliseconds on a single off-the-shelf server.",
+            "title": "Programming Language Supports",
+            "content": "Python, Restful, C++. Users could easily adopt Arctern with great flexibility.",
             "img": "cost"
           },
           {
-            "title": "Rich Data Type and Advanced Search (coming soon)",
-            "content": "Milvus supports various data types for fields in a record. You can also use advanced search methods, such as filtering, sorting and aggregation for one or multiple fields.",
+            "title": "Heterogeneous Computing",
+            "content": "Supports X86 and GPU. Arctern could help users to reduce hardware cost.",
             "img": "search"
-          },
-          {
-            "title": "Highly Scalable and Robust",
-            "content": "You can deploy Milvus in a distributed environment. To increase the capacity and reliability of a Milvus cluster, you can simply add more nodes.",
-            "img": "scalable"
-          },
-          {
-            "title": "Cloud Native",
-            "content": "We make it easy for you to run Milvus on public cloud, private cloud, or somewhere in between.",
-            "img": "cloud"
-          },
-          {
-            "title": "Ease of Use",
-            "content": "Milvus provides easy-to-use SDKs in Python, Java, Go and C++, as well as a RESTful API.",
-            "img": "availability"
           }
         ]
       },
       "section4": {
         "title": "Open Source",
-        "desc1": "Milvus is open-sourced on GitHub. ",
+        "desc1": "Arctern is open-sourced on GitHub. ",
         "desc2": "Contributions and feedback are welcome!",
         "contribute": "Contribute on Github",
-        "bootcamp": "Try Milvus Bootcamp"
-      },
-      "section5": {
-        "desc": "We are an LF AI Foundation incubation project."
+        "bootcamp": "Try Arctern Bootcamp"
       },
       "section8": {
         "title": "Scenarios",
-        "desc": "Step-by-step instructions to solve AI problems with Milvus.",
+        "desc": "Step-by-step instructions to solve AI problems with Arctern.",
         "img1": {
           "title": "Reverse Image Search",
           "content": "High-performance, customizable reverse image search system built with the VGG neural network model"
@@ -134,9 +114,6 @@
         "button": "Try on Cloud",
         "viewall": "View all scenarios"
       },
-      "section6": {
-        "title": "Milvus User Community"
-      },
       "section7": {
         "title": "Resources",
         "desc": "Find us and join the conversation on any of these platforms"
@@ -145,19 +122,19 @@
     "scenarios": {
       "section1": {
         "title": "Building The Search Engine For The AI Era",
-        "desc": "Adopted by over 100 organizations and institutions worldwide, Milvus empowers applications in a variety of fields, including image processing, computer vision, natural language processing, voice recognition, recommender systems, drug discovery, etc."
+        "desc": "Adopted by over 100 organizations and institutions worldwide, Arctern empowers applications in a variety of fields, including image processing, computer vision, natural language processing, voice recognition, recommender systems, drug discovery, etc."
       },
       "section2": {
         "desc1": "The demand for processing unstructured data such as pictures, videos, voices, and text is continuously increasing with the emergence of emerging applications such as smart cities, short videos, personalized product recommendations, and visual product search. The most mainstream method for processing these unstructured data is to use artificial intelligence technology (deep learning algorithms) to extract the features of these unstructured data, and use feature vectors to represent them, and then calculate and retrieve these feature vectors to achieve non-unstructured data. Analysis and retrieval of structured data.",
-        "desc2": "Milvus is designed to facilitate users to easily calculate and retrieve feature vectors. It supports rich feature vector indexing algorithms and the scheduling of heterogeneous computing resources. It has a complete user interface, data management components, and graphical management tools. Cloud-native The design concept allows Milvus to easily achieve horizontal expansion and high availability based on K8S. Since the product has been open sourced, it has received recognition and support from a large number of users. At present, the global community scale exceeds 3,000 people and there are more than 50 enterprise users.",
-        "desc3": "With the optimization of vector retrieval algorithms and the integration of heterogeneous computing resources, Milvus can provide stable and high-performance vector retrieval support for enterprise applications. In most scenarios, when the Top 1 recall rate is guaranteed to be 100%, and the Top100 recall rate is not less than 95%, the retrieval time for millions of data scales is 0.01 seconds, and the retrieval time for 100 million data scales is 0.1 seconds. Retrieval time of billions of data scale seconds."
+        "desc2": "Arctern is designed to facilitate users to easily calculate and retrieve feature vectors. It supports rich feature vector indexing algorithms and the scheduling of heterogeneous computing resources. It has a complete user interface, data management components, and graphical management tools. Cloud-native The design concept allows Arctern to easily achieve horizontal expansion and high availability based on K8S. Since the product has been open sourced, it has received recognition and support from a large number of users. At present, the global community scale exceeds 3,000 people and there are more than 50 enterprise users.",
+        "desc3": "With the optimization of vector retrieval algorithms and the integration of heterogeneous computing resources, Arctern can provide stable and high-performance vector retrieval support for enterprise applications. In most scenarios, when the Top 1 recall rate is guaranteed to be 100%, and the Top100 recall rate is not less than 95%, the retrieval time for millions of data scales is 0.01 seconds, and the retrieval time for 100 million data scales is 0.1 seconds. Retrieval time of billions of data scale seconds."
       },
       "section3": {
-        "title": "What Milvus Can help",
+        "title": "What Arctern Can help",
         "list": [
           {
             "title": "Computer Vision",
-            "desc": "Milvus can support various applications in the field of computer vision with picture and video processing as its core, especially the efficient processing of ultra-large-scale data, making Milvus widely used in the field of computer vision.",
+            "desc": "Arctern can support various applications in the field of computer vision with picture and video processing as its core, especially the efficient processing of ultra-large-scale data, making Arctern widely used in the field of computer vision.",
             "list": [
               "Search by image",
               "Image deduplication",
@@ -180,7 +157,7 @@
           },
           {
             "title": "Traditional vector calculations",
-            "desc": "There are also a lot of vector calculation scenarios in the traditional data processing field. Using traditional calculation methods requires a lot of computing power. With advanced algorithms, Milvus can increase the vector data processing capacity by at least two orders of magnitude with the same computing power resources.",
+            "desc": "There are also a lot of vector calculation scenarios in the traditional data processing field. Using traditional calculation methods requires a lot of computing power. With advanced algorithms, Arctern can increase the vector data processing capacity by at least two orders of magnitude with the same computing power resources.",
             "list": [
               "Molecular structural similarity analysis",
               "Molecular pharmacological analysis",
@@ -191,7 +168,7 @@
           },
           {
             "title": "Audio data processing",
-            "desc": "There are also a large number of vector calculation scenarios in the traditional data processing field. Using traditional calculation methods requires a large amount of computing power. With advanced algorithms, Milvus can increase the vector data processing capacity by at least two orders of magnitude with the same computing power resources.",
+            "desc": "There are also a large number of vector calculation scenarios in the traditional data processing field. Using traditional calculation methods requires a large amount of computing power. With advanced algorithms, Arctern can increase the vector data processing capacity by at least two orders of magnitude with the same computing power resources.",
             "list": [
               "Personalized music recommendation",
               "Music deduplication",
@@ -208,14 +185,14 @@
     },
     "gui": {
       "section1": {
-        "title": "Get Milvus Admin",
+        "title": "Get Arctern Admin",
         "desc": "an easy-to-use milvus administration platform",
         "link": "Get started"
       },
       "section2": {
         "desc1": "The demand for processing unstructured data such as pictures, videos, voices, and text is continuously increasing with the emergence of emerging applications such as smart cities, short videos, personalized product recommendations, and visual product search. The most mainstream method for processing these unstructured data is to use artificial intelligence technology (deep learning algorithms) to extract the features of these unstructured data, and use feature vectors to represent them, and then calculate and retrieve these feature vectors to achieve non-unstructured data. Analysis and retrieval of structured data.",
-        "desc2": "Milvus is designed to facilitate users to easily calculate and retrieve feature vectors. It supports rich feature vector indexing algorithms and the scheduling of heterogeneous computing resources. It has a complete user interface, data management components, and graphical management tools. Cloud-native The design concept allows Milvus to easily achieve horizontal expansion and high availability based on K8S. Since the product has been open sourced, it has received recognition and support from a large number of users. At present, the global community scale exceeds 3,000 people and there are more than 50 enterprise users.",
-        "desc3": "With the optimization of vector retrieval algorithms and the integration of heterogeneous computing resources, Milvus can provide stable and high-performance vector retrieval support for enterprise applications. In most scenarios, when the Top 1 recall rate is guaranteed to be 100%, and the Top100 recall rate is not less than 95%, the retrieval time for millions of data scales is 0.01 seconds, and the retrieval time for 100 million data scales is 0.1 seconds. Retrieval time of billions of data scale seconds."
+        "desc2": "Arctern is designed to facilitate users to easily calculate and retrieve feature vectors. It supports rich feature vector indexing algorithms and the scheduling of heterogeneous computing resources. It has a complete user interface, data management components, and graphical management tools. Cloud-native The design concept allows Arctern to easily achieve horizontal expansion and high availability based on K8S. Since the product has been open sourced, it has received recognition and support from a large number of users. At present, the global community scale exceeds 3,000 people and there are more than 50 enterprise users.",
+        "desc3": "With the optimization of vector retrieval algorithms and the integration of heterogeneous computing resources, Arctern can provide stable and high-performance vector retrieval support for enterprise applications. In most scenarios, when the Top 1 recall rate is guaranteed to be 100%, and the Top100 recall rate is not less than 95%, the retrieval time for millions of data scales is 0.01 seconds, and the retrieval time for 100 million data scales is 0.1 seconds. Retrieval time of billions of data scale seconds."
       },
       "section3": {
         "title": "Install and Run",

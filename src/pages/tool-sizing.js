@@ -99,11 +99,11 @@ const ToolSizing = () => {
 
   return (
     <>
-      <SEO title="Milvus tool" />
+      <SEO title="Arctern tool" />
       <div className="tool-wrapper">
         <div className="left-container">
           <div className="logo">
-            <img src={Logo} alt="Milvus Logo" className="logo"></img>
+            <img src={Logo} alt="Arctern Logo" className="logo"></img>
             <p>Sizing Tool</p>
           </div>
           <div className="error">{errorText}</div>

@@ -25,7 +25,7 @@ const GuiPage = ({ data, pageContext }) => {
   }, []);
   return (
     <Layout language={language} locale={locale}>
-      <SEO title="Milvus Admin" />
+      <SEO title="Arctern Admin" />
       <main className="gui-wrapper">
         <section className="section1">
           <h2>{section1.title}</h2>
@@ -86,7 +86,7 @@ const GuiPage = ({ data, pageContext }) => {
           <p>{section3.desc} http://localhost:3000/</p>
           <LocalizedLink
             className="primary primary-color btn"
-            to="/docs/Milvus%20Admin/admin_operations.md"
+            to="/docs/Arctern%20Admin/admin_operations.md"
             locale={locale}
           >
             {section3.help}
@@ -107,10 +107,8 @@ export const Query = graphql`
               notFound
               header {
                 quick
-                benchmarks
                 why
                 gui
-                solution
                 about
                 doc
                 blog

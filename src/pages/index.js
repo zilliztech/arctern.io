@@ -124,8 +124,6 @@ const IndexPage = ({ data, pageContext }) => {
     section1,
     section3,
     section4,
-    section5,
-    section6,
     section7
   } = language.home;
 
@@ -136,11 +134,12 @@ const IndexPage = ({ data, pageContext }) => {
     if (!set && urlLang !== locale) {
       navigate(`/${urlLang}/`);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <Layout language={language} locale={locale}>
-      <SEO title="Milvus" />
+      <SEO title="Arctern" />
       <Notification></Notification>
       <main className="home-wrapper">
         <section className="section1">
@@ -195,7 +194,7 @@ const IndexPage = ({ data, pageContext }) => {
           <div className="btn-wrapper">
             <a
               className="primary primary-color with-icon"
-              href="https://github.com/milvus-io"
+              href="https://github.com/zilliztech/arctern"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -204,7 +203,7 @@ const IndexPage = ({ data, pageContext }) => {
             </a>
             <a
               className="primary with-icon"
-              href="https://github.com/milvus-io/bootcamp"
+              href="https://github.com/zilliztech/arctern/bootcamp"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "#4eb8f0" }}
@@ -214,31 +213,21 @@ const IndexPage = ({ data, pageContext }) => {
             </a>
           </div>
         </section>
-        <section className="section5">
-          <a
-            href="https://lfai.foundation"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={LfaiLogo} alt="lfai logo"></img>
-          </a>
-          <p>{section5.desc}</p>
-        </section>
         <section className="sdk-tools">
           <h2>SDK & Tools</h2>
           <ul>
             <li>
               <LocalizedLink to="/gui" locale={locale}>
-                <img src={adminIcon} alt="Milvus Admin"></img>
+                <img src={adminIcon} alt="Arctern Admin"></img>
               </LocalizedLink>
 
-              <p>Milvus Admin</p>
+              <p>Arctern Admin</p>
             </li>
             <li>
               <a target="_blank" rel="noopener noreferrer" href="/tools/sizing">
-                <img src={sizingIcon} alt="Milvus Sizing Tools"></img>
+                <img src={sizingIcon} alt="Arctern Sizing Tools"></img>
               </a>
-              <p>Milvus Sizing Tools</p>
+              <p>Arctern Sizing Tools</p>
             </li>
             <li>
               <a
@@ -280,16 +269,6 @@ const IndexPage = ({ data, pageContext }) => {
               </a>
               <p>Golang SDK</p>
             </li>
-          </ul>
-        </section>
-        <section className="section6">
-          <h2>{section6.title}</h2>
-          <ul>
-            {users.map((v, i) => (
-              <li key={i}>
-                <img src={v} alt="customer"></img>
-              </li>
-            ))}
           </ul>
         </section>
         <section className="section7">
@@ -338,10 +317,8 @@ export const Query = graphql`
             layout {
               header {
                 quick
-                benchmarks
                 why
                 gui
-                solution
                 about
                 doc
                 blog
@@ -404,12 +381,6 @@ export const Query = graphql`
                   desc2
                   contribute
                   bootcamp
-                }
-                section5 {
-                  desc
-                }
-                section6 {
-                  title
                 }
                 section7 {
                   title

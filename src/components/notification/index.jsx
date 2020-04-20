@@ -13,7 +13,7 @@ const Notification = props => {
           👋
         </span>
         <a href="https://join.slack.com/t/milvusio/shared_invite/enQtNzY1OTQ0NDI3NjMzLWNmYmM1NmNjOTQ5MGI5NDhhYmRhMGU5M2NhNzhhMDMzY2MzNDdlYjM5ODQ5MmE3ODFlYzU3YjJkNmVlNDQ2ZTk">
-          Join the Milvus Slack channel here
+          Join the Arctern Slack channel here
         </a>
         {typeof document !== "undefined" &&
           document.body &&

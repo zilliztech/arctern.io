@@ -254,79 +254,6 @@
     }
   }
 
-  .section5 {
-    text-align: center;
-
-    img {
-      width: 186px;
-      margin-bottom: 1.2rem;
-    }
-
-    h2,
-    .desc {
-      text-align: center;
-    }
-
-    .desc {
-      margin-top: 20px;
-      line-height: 25px;
-    }
-
-
-  }
-
-  .section6 {
-
-    h2 {
-      font-size: 32px;
-      margin-bottom: 2rem;
-      color: #000000;
-      text-align: center;
-    }
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-
-      li {
-        margin: 1rem;
-
-        img {
-          width: 160px;
-        }
-      }
-    }
-
-    @include media("<=1000px") {
-      h2 {
-        font-size: 24px;
-        margin-bottom: 2rem;
-      }
-
-      ul {
-        justify-content: center;
-
-        li {
-          margin: 0.5rem;
-          margin-left: 0;
-
-          &:nth-child(4n + 4) {
-            margin-right: 0;
-          }
-
-          img {
-            width: 80px;
-          }
-
-        }
-      }
-
-    }
-  }
-
   .section7 {
     text-align: center;
 
@@ -446,8 +373,6 @@
 
   .section2,
   .section4,
-  .section5,
-  .section6,
   .section7,
   .sdk-tools {
     margin-top: 10rem;

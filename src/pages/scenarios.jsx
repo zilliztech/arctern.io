@@ -21,7 +21,7 @@ const ScenariosPage = ({ data, pageContext }) => {
 
   return (
     <Layout language={language} locale={locale}>
-      <SEO title="Milvus Scenarios" />
+      <SEO title="Arctern Scenarios" />
       <div className="scenarios-wrapper">
         <section className="section1">
           <h2>{section1.title}</h2>
@@ -76,10 +76,8 @@ export const Query = graphql`
               notFound
               header {
                 quick
-                benchmarks
                 why
                 gui
-                solution
                 about
                 doc
                 blog

@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import LocalizeLink from "../localizedLink/localizedLink";
 import Logo from "../../images/logo/milvus-horizontal-color.svg";
 import LfaiLogo from "../../images/logo/lfai-color.png";
-import Search from "../../components/search";
 import "./header.scss";
 import { globalHistory } from "@reach/router";
 
@@ -68,21 +67,6 @@ const Header = ({ language, locale }) => {
             >
               {header.quick}
             </LocalizeLink>
-
-            <LocalizeLink
-              locale={locale}
-              className="link"
-              to={"/docs/benchmarks_aws"}
-            >
-              {header.benchmarks}
-            </LocalizeLink>
-            {/* <LocalizeLink locale={locale} to="/gui" className="link">
-              {header.gui}
-            </LocalizeLink> */}
-
-            <LocalizeLink locale={locale} className="link" to="/scenarios">
-              {header.solution}
-            </LocalizeLink>
             <LocalizeLink
               locale={locale}
               className="link"
@@ -98,15 +82,12 @@ const Header = ({ language, locale }) => {
             >
               {header.blog}
             </a>
-
-            <Search language={header}></Search>
             <LocalizeLink locale={l} to={to}>
               <span onClick={onChangeLocale}>{locale === "cn" ? "En" : "中"}</span>
             </LocalizeLink>
           </div>
         ) : (
           <div className="right">
-            <Search language={header}></Search>
             <LocalizeLink locale={l} to={to}>
               <span onClick={onChangeLocale}>{locale === "cn" ? "En" : "中"}</span>
             </LocalizeLink>
@@ -121,11 +102,9 @@ const Header = ({ language, locale }) => {
         <LocalizeLink locale={locale} to="/gui" className="link">
           {header.gui}
         </LocalizeLink>
-
         <LocalizeLink locale={locale} className="link" to="/scenarios">
           {header.solution}
         </LocalizeLink>
-
         <LocalizeLink
           locale={locale}
           className="link"

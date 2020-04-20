@@ -3,13 +3,8 @@ import Layout from "../components/docLayout";
 import SEO from "../components/seo";
 import { graphql } from "gatsby";
 import hljs from "highlight.js";
-// import LocalizeLink from "../components/localizedLink/localizedLink";
-// import sql from "highlight.js/lib/languages/sql"
-// import bash from "highlight.js/lib/languages/bash"
 import "highlight.js/styles/atom-one-dark.css";
 import "./docTemplate.scss";
-// hljs.registerLanguage("sql", sql)
-// hljs.registerLanguage("bash", bash)
 
 export default function Template({
   data,
@@ -147,10 +142,8 @@ export const pageQuery = graphql`
             layout {
               header {
                 quick
-                benchmarks
                 why
                 gui
-                solution
                 about
                 doc
                 blog

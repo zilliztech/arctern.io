@@ -1,7 +1,7 @@
 {
   "name": "mivlus.io",
   "private": true,
-  "description": "Milvus.io website",
+  "description": "Arctern.io website",
   "version": "0.1.0",
   "author": "zizhao.chen@zilliz.com",
   "dependencies": {
