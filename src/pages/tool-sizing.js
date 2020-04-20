@@ -37,7 +37,6 @@ const ToolSizing = () => {
   }
   const compute = () => {
     const numRegx = /^[0-9]*$/
-    console.log(dimensions)
     if (!numRegx.test(vector) || vector < 0) {
       setErrorText("The num of vectors must above 0.")
       return

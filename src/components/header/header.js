@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import LocalizeLink from "../localizedLink/localizedLink";
-import Logo from "../../images/logo/milvus-horizontal-color.svg";
-import LfaiLogo from "../../images/logo/lfai-color.png";
+import Logo from "../../images/logo/arctern.svg";
 import "./header.scss";
 import { globalHistory } from "@reach/router";
 
@@ -38,7 +37,6 @@ const Header = ({ language, locale }) => {
   };
 
   const onChangeLocale = () => {
-    console.log('xxx')
     window.localStorage.setItem('milvus.io.setlanguage', true);
   }
 
@@ -49,13 +47,6 @@ const Header = ({ language, locale }) => {
           <LocalizeLink locale={locale} to={"/"}>
             <img src={Logo} alt="Milvos Logo"></img>
           </LocalizeLink>
-          <a
-            href="https://lfai.foundation/projects/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={LfaiLogo} alt="Lfai" className="lfai"></img>
-          </a>
         </div>
 
         {screenWidth > 1000 ? (

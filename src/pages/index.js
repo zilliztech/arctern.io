@@ -17,7 +17,6 @@ import supportIcon from "../images/features/support.svg";
 import metricsIcon from "../images/features/metrics.svg";
 import searchIcon from "../images/features/search.svg";
 
-import LfaiLogo from "../images/logo/lfai.svg";
 import GithubLogo from "../images/icon/github-white.svg";
 import LearnLogo from "../images/icon/learn.svg";
 import adminIcon from "../images/tools/admin.png";
@@ -147,8 +146,8 @@ const IndexPage = ({ data, pageContext }) => {
             <GithubButton
               type="stargazers"
               size="large"
-              namespace="milvus-io"
-              repo="milvus"
+              namespace="zilliztech"
+              repo="arctern"
             />
           </div>
           <h1>{section1.desc1}</h1>
