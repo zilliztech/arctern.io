@@ -117,7 +117,6 @@ const getRedirectLanguage = () => {
 };
 
 const IndexPage = ({ data, pageContext }) => {
-  console.info(data.allFile.edges[0].node.childLayoutJson, pageContext)
   const language = data.allFile.edges[0].node.childLayoutJson.layout;
   const { locale } = pageContext;
   const {

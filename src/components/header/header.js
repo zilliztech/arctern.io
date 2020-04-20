@@ -4,6 +4,16 @@ import LocalizeLink from "../localizedLink/localizedLink";
 import Logo from "../../images/logo/arctern.svg";
 import "./header.scss";
 import { globalHistory } from "@reach/router";
+import {
+  blog_site_cn,
+  blog_site_en,
+  link_quick_start,
+  link_overview,
+  link_mobi_why_milvus,
+  link_mobi_blog,
+  link_mobi_doc,
+  link_mobi_gui
+} from "../../consts/index";
 
 const Header = ({ language, locale }) => {
   const { header } = language;
@@ -13,14 +23,9 @@ const Header = ({ language, locale }) => {
   const to = globalHistory.location.pathname
     .replace("/en/", "/")
     .replace("/cn/", "/");
-  const blogHref =
-    locale === "cn"
-      ? "http://zilliz.blog.csdn.net"
-      : "https://medium.com/@milvusio";
+  const blogHref = locale === "cn" ? blog_site_cn : blog_site_en;
   useEffect(() => {
-    const cb = () => {
-      setScreenWidth(document.body.clientWidth);
-    };
+    const cb = () => setScreenWidth(document.body.clientWidth);
     cb();
     window.addEventListener("resize", cb);
     window.addEventListener("click", () => {
@@ -37,8 +42,8 @@ const Header = ({ language, locale }) => {
   };
 
   const onChangeLocale = () => {
-    window.localStorage.setItem('milvus.io.setlanguage', true);
-  }
+    window.localStorage.setItem("milvus.io.setlanguage", true);
+  };
 
   return (
     <>
@@ -53,16 +58,12 @@ const Header = ({ language, locale }) => {
           <div className="right">
             <LocalizeLink
               locale={locale}
-              to="/docs/guides/get_started/install_milvus/install_milvus.md"
+              to={link_quick_start}
               className="link"
             >
               {header.quick}
             </LocalizeLink>
-            <LocalizeLink
-              locale={locale}
-              className="link"
-              to={"/docs/about_milvus/overview.md"}
-            >
+            <LocalizeLink locale={locale} className="link" to={link_overview}>
               {header.doc}
             </LocalizeLink>
             <a
@@ -74,40 +75,37 @@ const Header = ({ language, locale }) => {
               {header.blog}
             </a>
             <LocalizeLink locale={l} to={to}>
-              <span onClick={onChangeLocale}>{locale === "cn" ? "En" : "中"}</span>
+              <span onClick={onChangeLocale}>
+                {locale === "cn" ? "En" : "中"}
+              </span>
             </LocalizeLink>
           </div>
         ) : (
           <div className="right">
             <LocalizeLink locale={l} to={to}>
-              <span onClick={onChangeLocale}>{locale === "cn" ? "En" : "中"}</span>
+              <span onClick={onChangeLocale}>
+                {locale === "cn" ? "En" : "中"}
+              </span>
             </LocalizeLink>
             <i className="fas fa-bars" onClick={handleClick}></i>
           </div>
         )}
       </header>
       <div className={`mobile-nav ${mobileNav && "open"}`}>
-        <LocalizeLink locale={locale} to="/#whymilvus" className="link">
+        <LocalizeLink
+          locale={locale}
+          to={link_mobi_why_milvus}
+          className="link"
+        >
           {header.quick}
         </LocalizeLink>
-        <LocalizeLink locale={locale} to="/gui" className="link">
+        <LocalizeLink locale={locale} to={link_mobi_gui} className="link">
           {header.gui}
         </LocalizeLink>
-        <LocalizeLink locale={locale} className="link" to="/scenarios">
-          {header.solution}
-        </LocalizeLink>
-        <LocalizeLink
-          locale={locale}
-          className="link"
-          to={"/docs/guides/get_started/install_milvus/install_milvus.md"}
-        >
+        <LocalizeLink locale={locale} className="link" to={link_mobi_doc}>
           {header.doc}
         </LocalizeLink>
-        <LocalizeLink
-          locale={locale}
-          className="link"
-          to={"/blogs/2019-08-26-vector-search-million.md"}
-        >
+        <LocalizeLink locale={locale} className="link" to={link_mobi_blog}>
           {header.blog}
         </LocalizeLink>
       </div>
