@@ -194,7 +194,7 @@ const IndexPage = ({ data, pageContext }) => {
               href="https://github.com/zilliztech/arctern/bootcamp"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: "#4eb8f0" }}
+              style={{ color: "#ED1C24" }}
             >
               <img src={LearnLogo} alt="learn more"></img>
               <span>{section4.bootcamp}</span>

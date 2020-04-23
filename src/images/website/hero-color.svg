@@ -23,7 +23,7 @@
         <mask id="mask-2" fill="white">
           <use xlink:href="#path-1"></use>
         </mask>
-        <use id="Mask" fill="#49AEE8" xlink:href="#path-1"></use>
+        <use id="Mask" fill="#ED1C24" xlink:href="#path-1"></use>
         <g id="hero" mask="url(#mask-2)">
           <g transform="translate(-234.000000, -30.000000)">
             <line x1="249.1" y1="622.75" x2="566.542105" y2="-13.25" id="Line-3" stroke="url(#linearGradient-3)" stroke-width="2" fill="none" stroke-linecap="square">
