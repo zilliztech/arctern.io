@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.milvus.io`,
+    siteUrl: `https://www.arctern.io`,
     title: ` · An Open Source Vector Similarity Search Engine - 开源向量相似度搜索引擎`,
     description: `An Open Source Vector Similarity Search Engine, 开源向量相似度搜索引擎`,
     author: `@ZILLIZ.com`

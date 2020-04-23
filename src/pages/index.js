@@ -19,12 +19,6 @@ import searchIcon from "../images/features/search.svg";
 
 import GithubLogo from "../images/icon/github-white.svg";
 import LearnLogo from "../images/icon/learn.svg";
-import adminIcon from "../images/tools/admin.png";
-import cIcon from "../images/tools/c.png";
-import goIcon from "../images/tools/go.png";
-import javaIcon from "../images/tools/java.png";
-import pythonIcon from "../images/tools/python.png";
-import sizingIcon from "../images/tools/sizing.png";
 import Qcode from "../images/qrcode.jpeg";
 import MilvusUserWechat from "../images/milvus-user-wechat.png";
 import GithubButton from "react-github-button";
@@ -41,13 +35,13 @@ const icons = {
   crud: crudIcon,
   cost: costIcon,
   search: searchIcon,
-  metrics: metricsIcon
+  metrics: metricsIcon,
 };
 
 const users = [];
 const resources = [];
 function importAllPics(r, type) {
-  r.keys().forEach(key => {
+  r.keys().forEach((key) => {
     const m = r(key);
     const matchs = key.match(/.\/(\S*).svg/);
     let href = "";
@@ -119,12 +113,7 @@ const getRedirectLanguage = () => {
 const IndexPage = ({ data, pageContext }) => {
   const language = data.allFile.edges[0].node.childLayoutJson.layout;
   const { locale } = pageContext;
-  const {
-    section1,
-    section3,
-    section4,
-    section7
-  } = language.home;
+  const { section1, section3, section4, section7 } = language.home;
 
   useEffect(() => {
     const urlLang = getRedirectLanguage();
@@ -172,7 +161,7 @@ const IndexPage = ({ data, pageContext }) => {
         <section className="section3">
           {/* <h2>{section3.title}</h2> */}
           <ul className="feature-wrapper">
-            {section3.list.map(v => (
+            {section3.list.map((v) => (
               <li className="feature-item" key={v.title}>
                 <div className="title-wrapper">
                   <img src={icons[v.img]} alt="icon"></img>
@@ -211,64 +200,6 @@ const IndexPage = ({ data, pageContext }) => {
               <span>{section4.bootcamp}</span>
             </a>
           </div>
-        </section>
-        <section className="sdk-tools">
-          <h2>SDK & Tools</h2>
-          <ul>
-            <li>
-              <LocalizedLink to="/gui" locale={locale}>
-                <img src={adminIcon} alt="Arctern Admin"></img>
-              </LocalizedLink>
-
-              <p>Arctern Admin</p>
-            </li>
-            <li>
-              <a target="_blank" rel="noopener noreferrer" href="/tools/sizing">
-                <img src={sizingIcon} alt="Arctern Sizing Tools"></img>
-              </a>
-              <p>Arctern Sizing Tools</p>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/milvus-io/milvus/tree/master/sdk"
-              >
-                <img src={cIcon} alt="C++ SDK"></img>
-              </a>
-              <p>C++ SDK</p>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/milvus-io/pymilvus"
-              >
-                <img src={pythonIcon} alt="Python SDK"></img>
-              </a>
-              <p>Python SDK</p>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/milvus-io/milvus-sdk-java"
-              >
-                <img src={javaIcon} alt="Java SDK"></img>
-              </a>
-              <p>Java SDK</p>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/milvus-io/milvus-sdk-go"
-              >
-                <img src={goIcon} alt="Golang SDK"></img>
-              </a>
-              <p>Golang SDK</p>
-            </li>
-          </ul>
         </section>
         <section className="section7">
           <h2>{section7.title}</h2>

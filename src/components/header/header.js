@@ -50,7 +50,7 @@ const Header = ({ language, locale }) => {
       <header className="header-wrapper">
         <div className="logo-wrapper">
           <LocalizeLink locale={locale} to={"/"}>
-            <img src={Logo} alt="Milvos Logo"></img>
+            <img src={Logo} alt="Arctern Logo"></img>
           </LocalizeLink>
         </div>
 
