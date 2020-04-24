@@ -5,9 +5,7 @@ import "./localizedLink.scss";
 
 export default ({ locale, to, children, className = "link" }) => {
   const language = locales[locale];
-  console.info(locale, to)
-  // const toMedium = locale === "en" && to.includes("blog");
-  const toMedium = false
+  const toMedium = locale === "en" && to && to.includes("blog");
   if (toMedium) {
     return (
       <a
