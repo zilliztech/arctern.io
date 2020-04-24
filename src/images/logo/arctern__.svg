@@ -5,8 +5,8 @@
     <desc>Created with Sketch.</desc>
     <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
-            <stop stop-color="#4FC4F9" stop-opacity="0" offset="0%"></stop>
-            <stop stop-color="#4FC4F9" offset="100%"></stop>
+            <stop stop-color="#ED1C24" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#ED1C24" offset="100%"></stop>
         </linearGradient>
         <polygon id="path-2" points="120 88 120 128 160 208 200 128 200 88 160 168"></polygon>
     </defs>
