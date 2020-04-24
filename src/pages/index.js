@@ -5,17 +5,13 @@ import SEO from "../components/seo";
 import LocalizedLink from "../components/localizedLink/localizedLink";
 import Notification from "../components/notification";
 import "../scss/index.scss";
-import availabilityIcon from "../images/features/availability.svg";
-import cloudIcon from "../images/features/cloud.svg";
-import costIcon from "../images/features/cost.svg";
-import crudIcon from "../images/features/crud.svg";
-import hybridIcon from "../images/features/hybrid.svg";
-import performenceIcon from "../images/features/performence.svg";
-import realtimeIcon from "../images/features/realtime.svg";
-import scalableIcon from "../images/features/scalable.svg";
-import supportIcon from "../images/features/support.svg";
-import metricsIcon from "../images/features/metrics.svg";
-import searchIcon from "../images/features/search.svg";
+
+import rocketIcon from "../images/features/rocket-solid.svg";
+import atomIcon from "../images/features/atom-solid.svg";
+import expandArrowIcon from "../images/features/expand-arrows-alt-solid.svg";
+import databaseIcon from "../images/features/database-solid.svg";
+import cubesIcon from "../images/features/cubes-solid.svg";
+import exchangeIcon from "../images/features/exchange-alt-solid.svg";
 
 import GithubLogo from "../images/icon/github-white.svg";
 import LearnLogo from "../images/icon/learn.svg";
@@ -25,17 +21,12 @@ import GithubButton from "react-github-button";
 import "react-github-button/assets/style.css";
 
 const icons = {
-  availability: availabilityIcon,
-  cloud: cloudIcon,
-  support: supportIcon,
-  scalable: scalableIcon,
-  realtime: realtimeIcon,
-  performence: performenceIcon,
-  hybrid: hybridIcon,
-  crud: crudIcon,
-  cost: costIcon,
-  search: searchIcon,
-  metrics: metricsIcon,
+  rocket: rocketIcon,
+  atom: atomIcon,
+  "expand-arrows-alt": expandArrowIcon,
+  database: databaseIcon,
+  cubes: cubesIcon,
+  "exchange-alt": exchangeIcon,
 };
 
 const users = [];
@@ -164,7 +155,10 @@ const IndexPage = ({ data, pageContext }) => {
             {section3.list.map((v) => (
               <li className="feature-item" key={v.title}>
                 <div className="title-wrapper">
-                  <img src={icons[v.img]} alt="icon"></img>
+                  <img
+                    src={icons[v.img]}
+                    alt="icon"
+                  ></img>
                   <p className="title">{v.title}</p>
                 </div>
                 <p

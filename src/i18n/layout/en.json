@@ -60,32 +60,32 @@
           {
             "title": "Powerful spatio-temporal functions",
             "content": "Support key OGC standard APIs, location algorithm and spatio-temporal models.",
-            "img": "metrics"
+            "img": "rocket"
           },
           {
             "title": "Viz Interaction",
             "content": "SQL based interaction capability. Arctern provides fast and vivid results for spatio-temporal analysis with server rendering technology.",
-            "img": "performence"
+            "img": "atom"
           },
           {
             "title": "Any scale",
             "content": "Arctern could be deployed on any scenarios from single laptop to cluster containing multiple servers. While the user experience remain the same.",
-            "img": "crud"
+            "img": "expand-arrows-alt"
           },
           {
             "title": "Modern Data Science Technology",
             "content": "Arctern integrates technology like Python, Spark etc. Users don't need to change their existing data analysis method and process.",
-            "img": "realtime"
+            "img": "database"
           },
           {
             "title": "Programming Language Supports",
             "content": "Python, Restful, C++. Users could easily adopt Arctern with great flexibility.",
-            "img": "cost"
+            "img": "cubes"
           },
           {
             "title": "Heterogeneous Computing",
             "content": "Supports X86 and GPU. Arctern could help users to reduce hardware cost.",
-            "img": "search"
+            "img": "exchange-alt"
           }
         ]
       },
