@@ -24,7 +24,6 @@ const Header = ({ language, locale }) => {
   const to = globalHistory.location.pathname
     .replace("/en/", "/")
     .replace("/cn/", "/");
-  console.info(locale, globalHistory.location.pathname, to);
   useEffect(() => {
     const cb = () => setIsMobile(isMobile());
     cb();

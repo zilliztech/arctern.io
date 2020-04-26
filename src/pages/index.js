@@ -118,7 +118,7 @@ const IndexPage = ({ data, pageContext }) => {
   return (
     <Layout language={language} locale={locale}>
       <SEO title="Arctern" />
-      <Notification></Notification>
+      <Notification locale={locale} ></Notification>
       <main className="home-wrapper">
         <section className="section1">
           <div className="githubicon">
