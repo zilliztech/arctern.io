@@ -1,24 +1,20 @@
 import React from "react";
+import { link_join_slack } from "../../consts/index";
 import "./index.scss";
 
-const Notification = props => {
-  // const [state, setState] = useState(true);
-  // const closeState = () => {
-  //   setState(false);
-  // };
+const Notification = (props) => {
+  const isMobile =
+    document && document.body && document.body.clientWidth > 1000;
+  const txt = `Join the Arctern Slack channel here ${
+    isMobile ? "to interact with our community!" : "!"
+  }`;
   return (
     <div className="notification">
       <div className="wrapper">
         <span role="img" aria-label="" aria-labelledby="">
           👋
         </span>
-        <a href="https://join.slack.com/t/milvusio/shared_invite/enQtNzY1OTQ0NDI3NjMzLWNmYmM1NmNjOTQ5MGI5NDhhYmRhMGU5M2NhNzhhMDMzY2MzNDdlYjM5ODQ5MmE3ODFlYzU3YjJkNmVlNDQ2ZTk">
-          Join the Arctern Slack channel here
-        </a>
-        {typeof document !== "undefined" &&
-          document.body &&
-          document.body.clientWidth > 1000 &&
-          "to interact with our community!"}
+        <a href={link_join_slack}>{txt}</a>
       </div>
     </div>
   );
