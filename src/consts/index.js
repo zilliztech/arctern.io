@@ -4,9 +4,8 @@ export const blog_site_en = `https://medium.com/@milvusio`;
 export const link_quick_start =
   "docs/versions/v0.1.x/arctern-webdocs/development-doc-cn/html/python/quick_start/quick-start-pandas.html";
 export const link_overview =
-  "/docs/guides/get_started/install_milvus/install_milvus.md";
+  "docs/versions/v0.1.x/arctern-webdocs/development-doc-cn/html/index.html";
 
-export const link_mobi_why_milvus = "/#whymilvus";
 export const link_mobi_blog = "/blogs/2019-08-26-vector-search-million.md";
 export const link_mobi_doc =
   "docs/versions/v0.1.x/arctern-webdocs/development-doc-cn/html/index.html";

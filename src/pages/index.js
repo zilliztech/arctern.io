@@ -12,7 +12,7 @@ import expandArrowIcon from "../images/features/expand-arrows-alt-solid.svg";
 import databaseIcon from "../images/features/database-solid.svg";
 import cubesIcon from "../images/features/cubes-solid.svg";
 import exchangeIcon from "../images/features/exchange-alt-solid.svg";
-import { link_join_slack, link_zhihu } from "../consts/index";
+import { link_join_slack, link_zhihu, link_quick_start } from "../consts/index";
 import GithubLogo from "../images/icon/github-white.svg";
 import LearnLogo from "../images/icon/learn.svg";
 import Qcode from "../images/qrcode.jpeg";
@@ -133,7 +133,7 @@ const IndexPage = ({ data, pageContext }) => {
           <div className="btn-wrapper">
             <LocalizedLink
               className="primary color-primary"
-              to="/docs/guides/get_started/install_milvus/install_milvus.md"
+              to={link_quick_start}
               locale={locale}
             >
               {section1.link2}
