@@ -105,7 +105,6 @@ const IndexPage = ({ data, pageContext }) => {
   const language = data.allFile.edges[0].node.childLayoutJson.layout;
   const { locale } = pageContext;
   const { section1, section3, section4, section7 } = language.home;
-
   useEffect(() => {
     const urlLang = getRedirectLanguage();
     const set = window.localStorage.getItem("milvus.io.setlanguage");

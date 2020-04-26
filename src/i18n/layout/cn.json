@@ -60,32 +60,32 @@
           {
             "title": "强大的时空分析功能",
             "content": "提供标准OGC地理空间数据处理接口、多种位置信息处理算法和时空分析模型。",
-            "img": "support"
+            "img": "rocket"
           },
           {
             "title": "可视化交互",
             "content": "基于SQL的数据分析交互。借助服务器端渲染技术，为时空数据分析提供高效、清晰的结果呈现方案。",
-            "img": "performence"
+            "img": "atom"
           },
           {
             "title": "多种规模的部署方案",
             "content": "针对不同场景的部署需求，提供从便携笔记本到服务器集群各种规模的部署方案。",
-            "img": "crud"
+            "img": "expand-arrows-alt"
           },
           {
             "title": "面向现代数据科学",
             "content": "贴合Python、Spark等主流生态的数据科学习惯，降低时空数据科学的应用门槛。",
-            "img": "realtime"
+            "img": "database"
           },
           {
             "title": "多语言支持",
             "content": "多语言支持。",
-            "img": "cost"
+            "img": "cubes"
           },
           {
             "title": "异构硬件加速",
             "content": "Arctern在支持商用处理器的同时提供GPU加速能力，大幅提升分析效率。",
-            "img": "availability"
+            "img": "exchange-alt"
           }
         ]
       },
