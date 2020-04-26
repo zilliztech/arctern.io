@@ -12,7 +12,7 @@ import expandArrowIcon from "../images/features/expand-arrows-alt-solid.svg";
 import databaseIcon from "../images/features/database-solid.svg";
 import cubesIcon from "../images/features/cubes-solid.svg";
 import exchangeIcon from "../images/features/exchange-alt-solid.svg";
-
+import { link_join_slack, link_zhihu } from "../consts/index";
 import GithubLogo from "../images/icon/github-white.svg";
 import LearnLogo from "../images/icon/learn.svg";
 import Qcode from "../images/qrcode.jpeg";
@@ -50,8 +50,7 @@ function importAllPics(r, type) {
           break;
         case "slack":
           order = 0;
-          href =
-            "https://join.slack.com/t/milvusio/shared_invite/enQtNzY1OTQ0NDI3NjMzLWNmYmM1NmNjOTQ5MGI5NDhhYmRhMGU5M2NhNzhhMDMzY2MzNDdlYjM5ODQ5MmE3ODFlYzU3YjJkNmVlNDQ2ZTk";
+          href = link_join_slack;
           break;
         case "twitter":
           order = 1;
@@ -59,7 +58,7 @@ function importAllPics(r, type) {
           break;
         case "zhihu":
           order = 5;
-          href = "https://zhuanlan.zhihu.com/ai-search";
+          href = link_zhihu;
           break;
         case "wechat":
           order = 3;
@@ -118,7 +117,7 @@ const IndexPage = ({ data, pageContext }) => {
   return (
     <Layout language={language} locale={locale}>
       <SEO title="Arctern" />
-      <Notification locale={locale} ></Notification>
+      <Notification locale={locale}></Notification>
       <main className="home-wrapper">
         <section className="section1">
           <div className="githubicon">
