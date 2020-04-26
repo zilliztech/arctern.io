@@ -15,6 +15,7 @@ COPY conf /etc/nginx
 
 # Static build
 COPY --from=builder /site/public /usr/share/nginx/html/
+COPY --from=builder /site/static/docs/versions/v0.1.x/arctern-webdocs /usr/share/nginx/html/
 
 # Default port exposure
 EXPOSE 80

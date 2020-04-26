@@ -12,7 +12,7 @@ import expandArrowIcon from "../images/features/expand-arrows-alt-solid.svg";
 import databaseIcon from "../images/features/database-solid.svg";
 import cubesIcon from "../images/features/cubes-solid.svg";
 import exchangeIcon from "../images/features/exchange-alt-solid.svg";
-
+import { link_join_slack, link_zhihu, link_quick_start } from "../consts/index";
 import GithubLogo from "../images/icon/github-white.svg";
 import LearnLogo from "../images/icon/learn.svg";
 import Qcode from "../images/qrcode.jpeg";
@@ -50,8 +50,7 @@ function importAllPics(r, type) {
           break;
         case "slack":
           order = 0;
-          href =
-            "https://join.slack.com/t/milvusio/shared_invite/enQtNzY1OTQ0NDI3NjMzLWNmYmM1NmNjOTQ5MGI5NDhhYmRhMGU5M2NhNzhhMDMzY2MzNDdlYjM5ODQ5MmE3ODFlYzU3YjJkNmVlNDQ2ZTk";
+          href = link_join_slack;
           break;
         case "twitter":
           order = 1;
@@ -59,7 +58,7 @@ function importAllPics(r, type) {
           break;
         case "zhihu":
           order = 5;
-          href = "https://zhuanlan.zhihu.com/ai-search";
+          href = link_zhihu;
           break;
         case "wechat":
           order = 3;
@@ -105,7 +104,6 @@ const IndexPage = ({ data, pageContext }) => {
   const language = data.allFile.edges[0].node.childLayoutJson.layout;
   const { locale } = pageContext;
   const { section1, section3, section4, section7 } = language.home;
-
   useEffect(() => {
     const urlLang = getRedirectLanguage();
     const set = window.localStorage.getItem("milvus.io.setlanguage");
@@ -119,7 +117,7 @@ const IndexPage = ({ data, pageContext }) => {
   return (
     <Layout language={language} locale={locale}>
       <SEO title="Arctern" />
-      <Notification></Notification>
+      <Notification locale={locale}></Notification>
       <main className="home-wrapper">
         <section className="section1">
           <div className="githubicon">
@@ -134,19 +132,19 @@ const IndexPage = ({ data, pageContext }) => {
           <h3 dangerouslySetInnerHTML={{ __html: section1.desc2 }}></h3>
           <div className="btn-wrapper">
             <LocalizedLink
-              className="primary white-color"
-              to="/docs/guides/get_started/install_milvus/install_milvus.md"
+              className="primary color-primary"
+              to={link_quick_start}
               locale={locale}
             >
               {section1.link2}
             </LocalizedLink>
-            <LocalizedLink
+            {/* <LocalizedLink
               className="primary white-color"
               to="/docs/about_milvus/overview.md"
               locale={locale}
             >
               {section1.link}
-            </LocalizedLink>
+            </LocalizedLink> */}
           </div>
         </section>
         <section className="section3">
@@ -155,10 +153,7 @@ const IndexPage = ({ data, pageContext }) => {
             {section3.list.map((v) => (
               <li className="feature-item" key={v.title}>
                 <div className="title-wrapper">
-                  <img
-                    src={icons[v.img]}
-                    alt="icon"
-                  ></img>
+                  <img src={icons[v.img]} alt="icon"></img>
                   <p className="title">{v.title}</p>
                 </div>
                 <p

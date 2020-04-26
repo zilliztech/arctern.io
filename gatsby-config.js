@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.arctern.io`,
-    title: ` · An Open Source Vector Similarity Search Engine - 开源向量相似度搜索引擎`,
-    description: `An Open Source Vector Similarity Search Engine, 开源向量相似度搜索引擎`,
-    author: `@ZILLIZ.com`
+    title: ` · An open source spatiotemporal data analysis platform - 开源时空大数据分析平台`,
+    description: `An open source spatiotemporal data analysis platform, 开源的时空大数据分析平台`,
+    author: `@ZILLIZ.com`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -15,31 +15,23 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
-        path: `${__dirname}/src/i18n/`
-      }
+        path: `${__dirname}/src/i18n/`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        path: `${__dirname}/src/images`,
+      },
     },
-
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `docs`,
-        path: `${__dirname}/src/pages/docs/versions`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `blogs`,
-        path: `${__dirname}/src/pages/blogs/versions`
-      }
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `docs`,
+    //     path: `${__dirname}/src/pages/docs/versions`,
+    //   },
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -48,19 +40,19 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,
-              wrapperStyle: "display:inline-block; min-width: 22px;width:100%;"
-            }
+              wrapperStyle: "display:inline-block; min-width: 22px;width:100%;",
+            },
           },
           {
             resolve: "gatsby-remark-autolink-headers",
             options: {
               offsetY: `100`,
               maintainCase: true,
-              enableCustomId: true
-            }
-          }
-        ]
-      }
+              enableCustomId: true,
+            },
+          },
+        ],
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -71,11 +63,11 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         display: `minimal-ui`,
-        // icon: `src/images/favicon.png` // This path is relative to the root of the site.
-      }
+        // icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
+      },
     },
     {
-      resolve: "gatsby-plugin-zopfli"
+      resolve: "gatsby-plugin-zopfli",
     },
     // add Google Analytics gtag.js to a site
     // however this doesn't work, switch to add it in /src/html.js
@@ -87,8 +79,8 @@ module.exports = {
         // Puts tracking script in the head instead of the body
         head: true,
         // enable ip anonymization
-        anonymize: true
-      }
-    }
-  ]
+        anonymize: true,
+      },
+    },
+  ],
 };

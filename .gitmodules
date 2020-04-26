@@ -1,24 +1,4 @@
-[submodule "src/pages/docs/versions/v0.6.0"]
-	path = src/pages/docs/versions/v0.6.0
-	url = https://github.com/milvus-io/docs.git
-	branch = v0.6.0
-[submodule "src/pages/docs/versions/master"]
-	path = src/pages/docs/versions/master
-	url = https://github.com/milvus-io/docs.git
-	branch = master
-[submodule "src/pages/blogs/versions/master"]
-	path = src/pages/blogs/versions/master
-	url = https://github.com/milvus-io/community.git
-	branch = master
-[submodule "src/pages/docs/versions/v0.7.0"]
-	path = src/pages/docs/versions/v0.7.0
-	url = https://github.com/milvus-io/docs.git
-	branch = v0.7.0
-[submodule "src/pages/docs/versions/v0.7.1"]
-	path = src/pages/docs/versions/v0.7.1
-	url = https://github.com/milvus-io/docs.git
-	branch = v0.7.1
-[submodule "src/pages/docs/versions/v0.8.0"]
-	path = src/pages/docs/versions/v0.8.0
-	url = https://github.com/milvus-io/docs.git
-	branch = v0.8.0
+[submodule "static/docs/versions/v0.1.x/arctern-webdocs"]
+	path = static/docs/versions/v0.1.x/arctern-webdocs
+	url = git@github.com:zilliztech/arctern-webdocs.git
+	branch = v0.1.x
