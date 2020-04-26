@@ -12,12 +12,13 @@ import {
   link_mobi_why_milvus,
   link_mobi_blog,
   link_mobi_doc,
-  link_mobi_gui
+  link_mobi_gui,
 } from "../../consts/index";
+import { isMobile } from "../../Helper.js";
 
 const Header = ({ language, locale }) => {
   const { header } = language;
-  const [screenWidth, setScreenWidth] = useState(null);
+  const [is_mobile, setIsMobile] = useState(false);
   const [mobileNav, setMobileNav] = useState(null);
   const l = locale === "cn" ? "en" : "cn";
   const to = globalHistory.location.pathname
@@ -25,7 +26,7 @@ const Header = ({ language, locale }) => {
     .replace("/cn/", "/");
   const blogHref = locale === "cn" ? blog_site_cn : blog_site_en;
   useEffect(() => {
-    const cb = () => setScreenWidth(document.body.clientWidth);
+    const cb = () => setIsMobile(isMobile());
     cb();
     window.addEventListener("resize", cb);
     window.addEventListener("click", () => {
@@ -36,9 +37,9 @@ const Header = ({ language, locale }) => {
     };
   }, []);
 
-  const handleClick = e => {
+  const handleClick = (e) => {
     e.stopPropagation();
-    setMobileNav(v => !v);
+    setMobileNav((v) => !v);
   };
 
   const onChangeLocale = () => {
@@ -54,26 +55,26 @@ const Header = ({ language, locale }) => {
           </LocalizeLink>
         </div>
 
-        {screenWidth > 1000 ? (
+        {!is_mobile ? (
           <div className="right">
-            <LocalizeLink
+            {/* <LocalizeLink
               locale={locale}
               to={link_quick_start}
               className="link"
             >
               {header.quick}
-            </LocalizeLink>
+            </LocalizeLink> */}
             <LocalizeLink locale={locale} className="link" to={link_overview}>
               {header.doc}
             </LocalizeLink>
-            <a
+            {/* <a
               href={blogHref}
               target="_blank"
               rel="noopener noreferrer"
               className="link"
             >
               {header.blog}
-            </a>
+            </a> */}
             <LocalizeLink locale={l} to={to}>
               <span onClick={onChangeLocale}>
                 {locale === "cn" ? "En" : "中"}
@@ -115,7 +116,7 @@ const Header = ({ language, locale }) => {
 
 Header.propTypes = {
   language: PropTypes.object.isRequired,
-  locale: PropTypes.string.isRequired
+  locale: PropTypes.string.isRequired,
 };
 
 export default Header;
