@@ -1,11 +1,10 @@
 @import "../include_media";
 
-$primary: #ED1C24;
+$primary: #ed1c24;
 
 a {
   text-decoration: none;
   color: #fff;
-
 
   &.primary {
     display: flex;
@@ -30,16 +29,15 @@ a {
   &.primary-color {
     color: #fff;
     background: $primary;
-
   }
 
-  &.white-color {
-    color: #FFF;
-    border: 2px solid #fff;
+  &.color-primary {
+    color: $primary;
+    border: 2px solid $primary;
 
     &:hover {
-      color: $primary;
-      background: #fff;
+      color: #fff;
+      background: $primary;
     }
   }
 }

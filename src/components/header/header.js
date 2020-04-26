@@ -5,14 +5,14 @@ import Logo from "../../images/logo/arctern.svg";
 import "./header.scss";
 import { globalHistory } from "@reach/router";
 import {
-  blog_site_cn,
-  blog_site_en,
-  link_quick_start,
+  // blog_site_cn,
+  // blog_site_en,
+  // link_quick_start,
   link_overview,
-  link_mobi_why_milvus,
-  link_mobi_blog,
+  // link_mobi_why_milvus,
+  // link_mobi_blog,
   link_mobi_doc,
-  link_mobi_gui,
+  // link_mobi_gui,
 } from "../../consts/index";
 import { isMobile } from "../../Helper.js";
 
@@ -24,7 +24,7 @@ const Header = ({ language, locale }) => {
   const to = globalHistory.location.pathname
     .replace("/en/", "/")
     .replace("/cn/", "/");
-  const blogHref = locale === "cn" ? blog_site_cn : blog_site_en;
+  console.info(locale, globalHistory.location.pathname, to);
   useEffect(() => {
     const cb = () => setIsMobile(isMobile());
     cb();
@@ -57,6 +57,7 @@ const Header = ({ language, locale }) => {
 
         {!is_mobile ? (
           <div className="right">
+            {/* hide no quick start now */}
             {/* <LocalizeLink
               locale={locale}
               to={link_quick_start}
@@ -67,6 +68,7 @@ const Header = ({ language, locale }) => {
             <LocalizeLink locale={locale} className="link" to={link_overview}>
               {header.doc}
             </LocalizeLink>
+            {/* hide no blog start now */}
             {/* <a
               href={blogHref}
               target="_blank"
@@ -93,22 +95,22 @@ const Header = ({ language, locale }) => {
         )}
       </header>
       <div className={`mobile-nav ${mobileNav && "open"}`}>
-        <LocalizeLink
+        {/* <LocalizeLink
           locale={locale}
           to={link_mobi_why_milvus}
           className="link"
         >
           {header.quick}
-        </LocalizeLink>
-        <LocalizeLink locale={locale} to={link_mobi_gui} className="link">
+        </LocalizeLink> */}
+        {/* <LocalizeLink locale={locale} to={link_mobi_gui} className="link">
           {header.gui}
-        </LocalizeLink>
+        </LocalizeLink> */}
         <LocalizeLink locale={locale} className="link" to={link_mobi_doc}>
           {header.doc}
         </LocalizeLink>
-        <LocalizeLink locale={locale} className="link" to={link_mobi_blog}>
+        {/* <LocalizeLink locale={locale} className="link" to={link_mobi_blog}>
           {header.blog}
-        </LocalizeLink>
+        </LocalizeLink> */}
       </div>
     </>
   );

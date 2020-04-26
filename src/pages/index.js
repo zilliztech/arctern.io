@@ -134,19 +134,19 @@ const IndexPage = ({ data, pageContext }) => {
           <h3 dangerouslySetInnerHTML={{ __html: section1.desc2 }}></h3>
           <div className="btn-wrapper">
             <LocalizedLink
-              className="primary white-color"
+              className="primary color-primary"
               to="/docs/guides/get_started/install_milvus/install_milvus.md"
               locale={locale}
             >
               {section1.link2}
             </LocalizedLink>
-            <LocalizedLink
+            {/* <LocalizedLink
               className="primary white-color"
               to="/docs/about_milvus/overview.md"
               locale={locale}
             >
               {section1.link}
-            </LocalizedLink>
+            </LocalizedLink> */}
           </div>
         </section>
         <section className="section3">
@@ -155,10 +155,7 @@ const IndexPage = ({ data, pageContext }) => {
             {section3.list.map((v) => (
               <li className="feature-item" key={v.title}>
                 <div className="title-wrapper">
-                  <img
-                    src={icons[v.img]}
-                    alt="icon"
-                  ></img>
+                  <img src={icons[v.img]} alt="icon"></img>
                   <p className="title">{v.title}</p>
                 </div>
                 <p
