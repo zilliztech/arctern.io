@@ -13,7 +13,6 @@ const Notification = ({ locale }) => {
       : "点击加入Arctern社区！";
   useEffect(() => {
     setIsMobile(isMobile());
-    //console.log('wahhhhh)
   }, []);
   return (
     <div className="notification">
@@ -21,7 +20,7 @@ const Notification = ({ locale }) => {
         <span role="img" aria-label="" aria-labelledby="">
           👋
         </span>
-        <a href={link_join_slack} target="_blank">{txt}</a>
+        <a href={link_join_slack} target="_blank" rel="noopener noreferrer" >{txt}</a>
       </div>
     </div>
   );
