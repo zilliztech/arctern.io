@@ -13,6 +13,7 @@ const Notification = ({ locale }) => {
       : "点击加入Arctern社区！";
   useEffect(() => {
     setIsMobile(isMobile());
+    //console.log('wahhhhh)
   }, []);
   return (
     <div className="notification">
