@@ -5,13 +5,13 @@ import Logo from "../../images/logo/arctern.svg";
 import "./header.scss";
 import { globalHistory } from "@reach/router";
 import {
-  // blog_site_cn,
+  blog_site_cn,
   // blog_site_en,
   // link_quick_start,
   link_overview,
   // link_mobi_why_milvus,
   // link_mobi_blog,
-  link_mobi_doc,
+  link_mobi_doc
   // link_mobi_gui,
 } from "../../consts/index";
 import { isMobile } from "../../Helper.js";
@@ -36,9 +36,9 @@ const Header = ({ language, locale }) => {
     };
   }, []);
 
-  const handleClick = (e) => {
+  const handleClick = e => {
     e.stopPropagation();
-    setMobileNav((v) => !v);
+    setMobileNav(v => !v);
   };
 
   const onChangeLocale = () => {
@@ -64,18 +64,23 @@ const Header = ({ language, locale }) => {
             >
               {header.quick}
             </LocalizeLink> */}
-            <LocalizeLink locale={locale} className="link" to={link_overview} _blank={true}>
+            <LocalizeLink
+              locale={locale}
+              className="link"
+              to={link_overview}
+              _blank={true}
+            >
               {header.doc}
             </LocalizeLink>
             {/* hide no blog start now */}
-            {/* <a
-              href={blogHref}
+            <a
+              href={blog_site_cn}
               target="_blank"
               rel="noopener noreferrer"
               className="link"
             >
               {header.blog}
-            </a> */}
+            </a>
             <LocalizeLink locale={l} to={to}>
               <span onClick={onChangeLocale}>
                 {locale === "cn" ? "En" : "中"}
@@ -104,12 +109,22 @@ const Header = ({ language, locale }) => {
         {/* <LocalizeLink locale={locale} to={link_mobi_gui} className="link">
           {header.gui}
         </LocalizeLink> */}
-        <LocalizeLink locale={locale} className="link" to={link_mobi_doc} _blank={true}>
+        <LocalizeLink
+          locale={locale}
+          className="link"
+          to={link_mobi_doc}
+          _blank={true}
+        >
           {header.doc}
         </LocalizeLink>
-        {/* <LocalizeLink locale={locale} className="link" to={link_mobi_blog}>
+        <LocalizeLink
+          locale={locale}
+          className="link"
+          to={blog_site_cn}
+          _blank={true}
+        >
           {header.blog}
-        </LocalizeLink> */}
+        </LocalizeLink>
       </div>
     </>
   );
@@ -117,7 +132,7 @@ const Header = ({ language, locale }) => {
 
 Header.propTypes = {
   language: PropTypes.object.isRequired,
-  locale: PropTypes.string.isRequired,
+  locale: PropTypes.string.isRequired
 };
 
 export default Header;
