@@ -3,13 +3,18 @@ import { Link } from "gatsby";
 import locales from "../../consts/locales.js";
 import "./localizedLink.scss";
 
-export default ({ locale, to, children, className = "link" }) => {
+export default ({
+  locale,
+  to,
+  children,
+  className = "link",
+  _blank = false
+}) => {
   const language = locales[locale];
-  const toMedium = locale === "en" && to && to.includes("blog");
-  if (toMedium) {
+  if (_blank) {
     return (
       <a
-        href="https://medium.com/@milvusio"
+        href={to}
         target="_blank"
         rel="noopener noreferrer"
         children={children}

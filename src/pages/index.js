@@ -16,7 +16,7 @@ import { link_join_slack, link_zhihu, link_quick_start } from "../consts/index";
 import GithubLogo from "../images/icon/github-white.svg";
 import LearnLogo from "../images/icon/learn.svg";
 import Qcode from "../images/qrcode.jpeg";
-import MilvusUserWechat from "../images/milvus-user-wechat.png";
+import ArcternUserWechat from "../images/user-wechat.png";
 import GithubButton from "react-github-button";
 import "react-github-button/assets/style.css";
 
@@ -26,42 +26,29 @@ const icons = {
   "expand-arrows-alt": expandArrowIcon,
   database: databaseIcon,
   cubes: cubesIcon,
-  "exchange-alt": exchangeIcon,
+  "exchange-alt": exchangeIcon
 };
 
 const users = [];
 const resources = [];
 function importAllPics(r, type) {
-  r.keys().forEach((key) => {
+  r.keys().forEach(key => {
     const m = r(key);
     const matchs = key.match(/.\/(\S*).svg/);
     let href = "";
-    let order = 0;
+    let order = null;
     if (type === "resources" && matchs.length) {
       switch (matchs[1]) {
-        case "bilibili":
-          order = 4;
-          href =
-            "https://space.bilibili.com/478166626?from=search&seid=1306120686699362786";
-          break;
-        case "medium":
-          order = 2;
-          href = "https://medium.com/@milvusio";
-          break;
         case "slack":
           order = 0;
           href = link_join_slack;
           break;
-        case "twitter":
-          order = 1;
-          href = "https://twitter.com/milvusio";
-          break;
         case "zhihu":
-          order = 5;
+          order = 1;
           href = link_zhihu;
           break;
         case "wechat":
-          order = 3;
+          order = 2;
           href = "#";
           break;
         default:
@@ -75,14 +62,9 @@ function importAllPics(r, type) {
   });
 }
 importAllPics(
-  require.context("../images/website/users", false, /\.jpg$/),
-  "users"
-);
-importAllPics(
   require.context("../images/website/community", false, /\.svg$/),
   "resources"
 );
-
 const getRedirectLanguage = () => {
   if (typeof navigator === `undefined`) {
     return "en";
@@ -135,6 +117,7 @@ const IndexPage = ({ data, pageContext }) => {
               className="primary color-primary"
               to={link_quick_start}
               locale={locale}
+              _blank={true}
             >
               {section1.link2}
             </LocalizedLink>
@@ -150,7 +133,7 @@ const IndexPage = ({ data, pageContext }) => {
         <section className="section3">
           {/* <h2>{section3.title}</h2> */}
           <ul className="feature-wrapper">
-            {section3.list.map((v) => (
+            {section3.list.map(v => (
               <li className="feature-item" key={v.title}>
                 <div className="title-wrapper">
                   <img src={icons[v.img]} alt="icon"></img>
@@ -206,7 +189,7 @@ const IndexPage = ({ data, pageContext }) => {
                       style={{ maxWidth: "initial" }}
                       width="150"
                       height="150"
-                      src={MilvusUserWechat}
+                      src={ArcternUserWechat}
                       alt="二维码"
                     />
                     <img
