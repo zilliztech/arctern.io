@@ -64,7 +64,7 @@ const Header = ({ language, locale }) => {
             >
               {header.quick}
             </LocalizeLink> */}
-            <LocalizeLink locale={locale} className="link" to={link_overview}>
+            <LocalizeLink locale={locale} className="link" to={link_overview} _blank={true}>
               {header.doc}
             </LocalizeLink>
             {/* hide no blog start now */}
@@ -104,7 +104,7 @@ const Header = ({ language, locale }) => {
         {/* <LocalizeLink locale={locale} to={link_mobi_gui} className="link">
           {header.gui}
         </LocalizeLink> */}
-        <LocalizeLink locale={locale} className="link" to={link_mobi_doc}>
+        <LocalizeLink locale={locale} className="link" to={link_mobi_doc} _blank={true}>
           {header.doc}
         </LocalizeLink>
         {/* <LocalizeLink locale={locale} className="link" to={link_mobi_blog}>
