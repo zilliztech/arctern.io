@@ -12,7 +12,7 @@ import expandArrowIcon from "../images/features/expand-arrows-alt-solid.svg";
 import databaseIcon from "../images/features/database-solid.svg";
 import cubesIcon from "../images/features/cubes-solid.svg";
 import exchangeIcon from "../images/features/exchange-alt-solid.svg";
-import { link_join_slack, link_zhihu, link_quick_start } from "../consts/index";
+import { link_join_slack, link_zhihu, link_quick_start,link_bilibili, link_medium, link_twitter } from "../consts/index";
 import GithubLogo from "../images/icon/github-white.svg";
 import LearnLogo from "../images/icon/learn.svg";
 import Qcode from "../images/qrcode.jpeg";
@@ -43,12 +43,24 @@ function importAllPics(r, type) {
           order = 0;
           href = link_join_slack;
           break;
-        case "zhihu":
+        case "bilibili":
+          order = 5;
+          href =link_bilibili;
+          break;
+        case "medium":
+          order = 2;
+          href = link_medium;
+          break;
+        case "twitter":
           order = 1;
+          href = link_twitter;
+          break;
+        case "zhihu":
+          order = 3;
           href = link_zhihu;
           break;
         case "wechat":
-          order = 2;
+          order = 4;
           href = "#";
           break;
         default:
