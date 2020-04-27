@@ -20,7 +20,7 @@ const Notification = ({ locale }) => {
         <span role="img" aria-label="" aria-labelledby="">
           👋
         </span>
-        <a href={link_join_slack}>{txt}</a>
+        <a href={link_join_slack} target="_blank">{txt}</a>
       </div>
     </div>
   );
