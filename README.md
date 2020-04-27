@@ -12,9 +12,3 @@ arctern.io Official website
 
 add new version doc (branch in repo)
 
-```
-    git submodule add -b your-version-branch https://github.com/milvus-io/docs.git src/pages/docs/versions/your-version-branch
-    git submodule add -b v0.6.0 https://github.com/milvus-io/docs.git src/pages/docs/versions/v0.6.0
-    git submodule add -b master https://github.com/milvus-io/docs.git src/pages/docs/versions/master
-    git submodule add -b master https://github.com/milvus-io/community.git src/pages/blogs/versions/master
-```
