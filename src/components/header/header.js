@@ -8,10 +8,11 @@ import {
   blog_site_cn,
   // blog_site_en,
   // link_quick_start,
+  link_root,
   link_overview,
   // link_mobi_why_milvus,
   // link_mobi_blog,
-  link_mobi_doc
+  link_mobi_doc,
   // link_mobi_gui,
 } from "../../consts/index";
 import { isMobile } from "../../Helper.js";
@@ -36,9 +37,9 @@ const Header = ({ language, locale }) => {
     };
   }, []);
 
-  const handleClick = e => {
+  const handleClick = (e) => {
     e.stopPropagation();
-    setMobileNav(v => !v);
+    setMobileNav((v) => !v);
   };
 
   const onChangeLocale = () => {
@@ -67,7 +68,7 @@ const Header = ({ language, locale }) => {
             <LocalizeLink
               locale={locale}
               className="link"
-              to={link_overview}
+              to={`${link_root}${link_overview}`}
               _blank={true}
             >
               {header.doc}
@@ -132,7 +133,7 @@ const Header = ({ language, locale }) => {
 
 Header.propTypes = {
   language: PropTypes.object.isRequired,
-  locale: PropTypes.string.isRequired
+  locale: PropTypes.string.isRequired,
 };
 
 export default Header;
