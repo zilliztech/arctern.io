@@ -20,6 +20,8 @@ import {
   link_medium,
   link_twitter,
   link_root,
+  link_bootcamp,
+  link_github,
 } from "../consts/index";
 import GithubLogo from "../images/icon/github-white.svg";
 import LearnLogo from "../images/icon/learn.svg";
@@ -167,7 +169,7 @@ const IndexPage = ({ data, pageContext }) => {
           <div className="btn-wrapper">
             <a
               className="primary primary-color with-icon"
-              href="https://github.com/zilliztech/arctern"
+              href={link_github}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -176,7 +178,7 @@ const IndexPage = ({ data, pageContext }) => {
             </a>
             <a
               className="primary with-icon"
-              href="https://github.com/zilliztech/arctern/bootcamp"
+              href={link_bootcamp}
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "#ED1C24" }}
