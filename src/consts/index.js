@@ -14,3 +14,4 @@ export const link_bilibili =
   "https://space.bilibili.com/478166626?from=search&seid=1306120686699362786";
 export const link_medium = `https://medium.com/@ArcternIo`;
 export const link_twitter = `https://twitter.com/ArcternIo`;
+export const link_github = `https://github.com/zilliztech/arctern`;
