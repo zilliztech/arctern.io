@@ -44,55 +44,55 @@
     "home": {
       "section1": {
         "desc1": "An Open Source Spatiotemporal Data Analysis Platform",
-        "desc2": "Arctern is designed to accelerate the processing, analysis and visualization of spatiotemporal data. Based on most popular open source big data technology, we are building a flexible, powerful, high performance analysis platform for people to meet the spatio-temporal data challenge in 5G/IoT era.",
+        "desc2": "Arctern is designed specifically to accelerate the processing, analysis, and visualization of spatiotemporal data. Based on the most popular open-source big data technologies, Arctern provides a flexible and high-performance analysis platform helping you address the challenges posed by spatiotemporal data in a time of 5G and IoT.",
         "link": "Learn More",
         "link2": "Get Started",
         "community": "Community"
       },
       "section2": {
         "title": "What is Arctern",
-        "content": "Arctern is an open source similarity search engine for massive-scale feature vectors. Built with heterogeneous computing architecture for the best cost efficiency. Searches over billion-scale vectors take only milliseconds with minimum computing resources. Arctern can be used in a wide variety of scenarios to boost AI development.",
+        "content": "Arctern is designed specifically to accelerate the processing, analysis, and visualization of spatiotemporal data. Based on the most popular open-source big data technologies, Arctern provides a flexible and high-performance analysis platform helping you address the challenges posed by spatiotemporal data in a time of 5G and IoT.",
         "link": "Quick Start"
       },
       "section3": {
         "title": "Arctern Features",
         "list": [
           {
-            "title": "Powerful spatio-temporal functions",
-            "content": "Support key OGC standard APIs, location algorithm and spatio-temporal models.",
+            "title": "Powerful spatiotemporal functions",
+            "content": "Supports key OGC standard APIs, location-based algorithms, and spatiotemporal models.",
             "img": "rocket"
           },
           {
             "title": "Viz Interaction",
-            "content": "SQL based interaction capability. Arctern provides fast and vivid results for spatio-temporal analysis with server rendering technology.",
+            "content": "SQL-based interaction capability. Arctern can quickly present vivid spatiotemporal analysis results using server rendering technologies.",
             "img": "atom"
           },
           {
-            "title": "Any scale",
-            "content": "Arctern could be deployed on any scenarios from single laptop to cluster containing multiple servers. While the user experience remain the same.",
+            "title": "Scalability",
+            "content": "Arctern can be deployed anywhere between a standalone laptop and a cluster of multiple servers without compromising user experience.",
             "img": "expand-arrows-alt"
           },
           {
-            "title": "Modern Data Science Technology",
-            "content": "Arctern integrates technology like Python, Spark etc. Users don't need to change their existing data analysis method and process.",
+            "title": "State-of-the-art Data Science Technologies",
+            "content": "Arctern integrates technologies such as Pandas and Spark. You do not need to change the existing data analysis methodologies or processes.",
             "img": "database"
           },
           {
-            "title": "Programming Language Supports",
-            "content": "Python, Restful, C++. Users could easily adopt Arctern with great flexibility.",
+            "title": "Supported Programming Languages",
+            "content": "Python, RESTful, and C++. You can adopt Arctern with ease and great flexibility.",
             "img": "cubes"
           },
           {
             "title": "Heterogeneous Computing",
-            "content": "Supports X86 and GPU. Arctern could help users to reduce hardware cost.",
+            "content": "Supports x86 and GPU. Arctern can help you reduce hardware costs.",
             "img": "exchange-alt"
           }
         ]
       },
       "section4": {
         "title": "Open Source",
-        "desc1": "Arctern is open-sourced on GitHub. ",
-        "desc2": "Contributions and feedback are welcome!",
+        "desc1": "Arctern is open-source on GitHub. ",
+        "desc2": "Contributions or any forms of feedback are welcome!",
         "contribute": "Contribute on Github",
         "bootcamp": "Try Arctern Bootcamp"
       },
@@ -116,7 +116,7 @@
       },
       "section7": {
         "title": "Resources",
-        "desc": "Find us and join the conversation on any of these platforms"
+        "desc": "Find us and join a conversation on any of these platforms."
       }
     },
     "scenarios": {
