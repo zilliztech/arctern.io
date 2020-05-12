@@ -15,13 +15,13 @@ import exchangeIcon from "../images/features/exchange-alt-solid.svg";
 import {
   link_join_slack,
   link_zhihu,
-  link_quick_start,
+  link_quick_start_cn,
+  link_quick_start_en,
   link_bilibili,
   link_medium,
   link_twitter,
-  link_root,
   link_bootcamp,
-  link_github,
+  link_github
 } from "../consts/index";
 import GithubLogo from "../images/icon/github-white.svg";
 import LearnLogo from "../images/icon/learn.svg";
@@ -36,13 +36,13 @@ const icons = {
   "expand-arrows-alt": expandArrowIcon,
   database: databaseIcon,
   cubes: cubesIcon,
-  "exchange-alt": exchangeIcon,
+  "exchange-alt": exchangeIcon
 };
 
 const users = [];
 const resources = [];
 function importAllPics(r, type) {
-  r.keys().forEach((key) => {
+  r.keys().forEach(key => {
     const m = r(key);
     const matchs = key.match(/.\/(\S*).svg/);
     let href = "";
@@ -108,6 +108,8 @@ const IndexPage = ({ data, pageContext }) => {
   const language = data.allFile.edges[0].node.childLayoutJson.layout;
   const { locale } = pageContext;
   const { section1, section3, section4, section7 } = language.home;
+  const link_quick_start =
+    locale === "cn" ? link_quick_start_cn : link_quick_start_en;
   useEffect(() => {
     const urlLang = getRedirectLanguage();
     const set = window.localStorage.getItem("milvus.io.setlanguage");
@@ -137,7 +139,7 @@ const IndexPage = ({ data, pageContext }) => {
           <div className="btn-wrapper">
             <LocalizedLink
               className="primary color-primary"
-              to={`${link_root}${link_quick_start}`}
+              to={link_quick_start}
               locale={locale}
               _blank={true}
             >
@@ -146,9 +148,8 @@ const IndexPage = ({ data, pageContext }) => {
           </div>
         </section>
         <section className="section3">
-          {/* <h2>{section3.title}</h2> */}
           <ul className="feature-wrapper">
-            {section3.list.map((v) => (
+            {section3.list.map(v => (
               <li className="feature-item" key={v.title}>
                 <div className="title-wrapper">
                   <img src={icons[v.img]} alt="icon"></img>
