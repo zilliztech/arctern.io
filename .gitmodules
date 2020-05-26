@@ -2,3 +2,7 @@
 	path = static/docs/versions/v0.1.x/arctern-webdocs
 	url = https://github.com/zilliztech/arctern-webdocs.git
 	branch = v0.1.x
+[submodule "static/docs/versions/v0.2.x"]
+	path = static/docs/versions/v0.2.x
+	url = https://github.com/zilliztech/arctern-webdocs.git
+	branch = v0.2.x
