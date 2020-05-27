@@ -33,9 +33,9 @@ const Header = ({ language, locale }) => {
     };
   }, []);
 
-  const handleClick = e => {
+  const handleClick = (e) => {
     e.stopPropagation();
-    setMobileNav(v => !v);
+    setMobileNav((v) => !v);
   };
 
   const onChangeLocale = () => {
@@ -110,7 +110,7 @@ const Header = ({ language, locale }) => {
 
 Header.propTypes = {
   language: PropTypes.object.isRequired,
-  locale: PropTypes.string.isRequired
+  locale: PropTypes.string.isRequired,
 };
 
 export default Header;
