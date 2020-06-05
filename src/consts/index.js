@@ -16,4 +16,4 @@ export const link_bilibili =
 export const link_medium = `https://medium.com/@ArcternIo`;
 export const link_twitter = `https://twitter.com/ArcternIo`;
 export const link_github = `https://github.com/zilliztech/arctern`;
-export const link_bootcamp = `https://github.com/zilliztech/arctern/bootcamp`;
+export const link_bootcamp = `https://github.com/arctern-io/arctern-bootcamp`;
