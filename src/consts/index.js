@@ -4,7 +4,7 @@ export const blog_site_en = `https://medium.com/@milvusio`;
 export const version = `v0.2.x`;
 const Base_doc = `docs/versions/`;
 export const link_quick_start_cn = `${link_root}${Base_doc}${version}/development-doc-cn/html/index.html`;
-export const link_quick_start_en = `${link_root}${Base_doc}${version}/development-doc-cn/html/index.html`;
+export const link_quick_start_en = `${link_root}${Base_doc}${version}/development-doc-en/html/index.html`;
 export const link_overview_cn = `${Base_doc}${version}/development-doc-cn/html/index.html`;
 export const link_overview_en = `${Base_doc}${version}/development-doc-en/html/index.html`;
 
